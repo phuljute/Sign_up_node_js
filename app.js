@@ -37,7 +37,6 @@ app.post('/signup', urlencodedParser, [
 ], (req, res)=> {
 
     const errors = validationResult(req)
-    console.log(req);
     if(!errors.isEmpty()) {
         // return res.status(422).jsonp(errors.array())
         res.status(422)
